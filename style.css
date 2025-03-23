@@ -327,7 +327,9 @@ main >.principal > section.inicio >.imagem > img{
 
 /* ACOMPANHAMENTO */
 
-
+.principal {
+    background-color: rgb(155, 4, 4);
+}
 .acompanhamentos{
     padding: 50px 0px;
     text-align: center;
@@ -337,11 +339,12 @@ main >.principal > section.inicio >.imagem > img{
 .acompanhamentos > .texto > h2{
     font-family: "Parisienne", serif;
     font-size: 25px;
+    color: #F09C05;
 }
 
 .acompanhamentos > .texto > h1{
     font-family: "Boldonse", system-ui;
-    color:rgb(155, 4, 4);
+    color: white;
     font-size: 45px;
 }
 
@@ -370,10 +373,15 @@ main >.principal > section.inicio >.imagem > img{
 
 }
 
+.acompanhamentos > .conteudo > .refri > div > h1{
+    color: white;
+}
+
 .acompanhamentos > .conteudo > .refri > div > a{
     display: block;
     text-decoration: none;
-    color:rgb(155, 4, 4);
+    background-color: white;
+    color: black;
     margin: 10px;
     border: 1px solid rgba(0, 0, 0, 0.329);
     border-radius: 5px;
@@ -384,10 +392,10 @@ main >.principal > section.inicio >.imagem > img{
 }
 
 .acompanhamentos > .conteudo > .refri > div>a:hover{
-    background-color: #F09C05;
-    color: black;
+    background-color:#F09C05;
+    color: white;
     border: 1px solid #F09C05;
-    font-weight: 400;
+    font-weight: 900;
 }
 
 

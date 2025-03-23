@@ -95,7 +95,8 @@
         width: 100%;
         padding-left: 50px;
         /* position: absolute; */
-        padding-bottom: 130px;
+        padding-bottom: 10px ;
+        padding-top: 40px;
 
         
     }
@@ -144,13 +145,8 @@
         background-color: rgb(155, 4, 4);
     }
 
-    .acompanhamentos > .texto > h2{
-        color: #F09C05;
-    }
-
     .acompanhamentos > .texto > h1{
         font-size: 30px;
-        color: white;
     }
 
     .acompanhamentos > .conteudo{
@@ -170,7 +166,6 @@
         height: 130px;
     }
     .acompanhamentos > .conteudo > .refri > div > a{
-        color: #F09C05;
         font-size: 10px;
     }
 
