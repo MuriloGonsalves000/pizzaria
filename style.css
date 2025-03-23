@@ -370,7 +370,7 @@ main >.principal > section.inicio >.imagem > img{
 
 }
 
-.acompanhamentos > .conteudo > .refri > div>a{
+.acompanhamentos > .conteudo > .refri > div > a{
     display: block;
     text-decoration: none;
     color:rgb(155, 4, 4);
@@ -378,8 +378,8 @@ main >.principal > section.inicio >.imagem > img{
     border: 1px solid rgba(0, 0, 0, 0.329);
     border-radius: 5px;
     font-size: 15px;
-    padding: 5px 30px;
-    text-transform: uppercase;
+    padding: 5px 10px;
+    text-align: center;
     font-weight: 900;
 }
 
