@@ -259,7 +259,7 @@ main >.principal > section.inicio >.imagem > img{
     font-size: 15px;
     padding: 5px 30px;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 900;
     margin-bottom: 20px;
 }
 
@@ -267,7 +267,6 @@ main >.principal > section.inicio >.imagem > img{
     background-color: #F09C05;
     color: black;
     border: 1px solid #F09C05;
-    font-weight: 400;
 }
 
 .cardapio >.conteinersabores{
@@ -305,21 +304,21 @@ main >.principal > section.inicio >.imagem > img{
 .cardapio >.conteinersabores >.sabor >a{
     display: block;
     text-decoration: none;
-    color: #F09C05;
+    background-color:rgb(155, 4, 4);
+    color: white;
     margin: 10px;
     border: 1px solid rgba(0, 0, 0, 0.329);
     border-radius: 5px;
     font-size: 15px;
     padding: 5px 30px;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 900;
 }
 
 .cardapio >.conteinersabores >.sabor >a:hover{
-    background-color: #F09C05;
-    color: black;
-    border: 1px solid #F09C05;
-    font-weight: 400;
+    background-color: white;
+    color: rgb(155, 4, 4);
+    
 }
 
 
@@ -331,7 +330,7 @@ main >.principal > section.inicio >.imagem > img{
     background-color: rgb(155, 4, 4);
 }
 .acompanhamentos{
-    padding: 50px 0px;
+    padding: 80px 0px;
     text-align: center;
     max-width: 1200px;
 }
@@ -380,8 +379,7 @@ main >.principal > section.inicio >.imagem > img{
 .acompanhamentos > .conteudo > .refri > div > a{
     display: block;
     text-decoration: none;
-    background-color: white;
-    color: black;
+    
     margin: 10px;
     border: 1px solid rgba(0, 0, 0, 0.329);
     border-radius: 5px;
@@ -389,13 +387,15 @@ main >.principal > section.inicio >.imagem > img{
     padding: 5px 10px;
     text-align: center;
     font-weight: 900;
+    background-color:#F09C05;
+    color: white;
 }
 
 .acompanhamentos > .conteudo > .refri > div>a:hover{
-    background-color:#F09C05;
-    color: white;
-    border: 1px solid #F09C05;
+    
     font-weight: 900;
+    background-color: white;
+    color: #DE9008;
 }
 
 
