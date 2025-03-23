@@ -1,0 +1,147 @@
+/* Smartphone*/
+
+@media (max-width:600px) {
+    *{
+        max-width:600px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav{
+        position: fixed;
+        align-items: start;
+        padding: 0;
+    }
+
+    nav > a.menu{
+        display: block;
+        margin-top: 10%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    nav > a.menu > svg{
+        width: 60px;
+        
+    }
+    nav > .card {
+        display: none;
+        background-color:white;
+        width: 50%;
+        height: 530px;
+        padding-right: 10px;
+        margin: 0;
+        font-family: "Boldonse", system-ui;
+        border-top-right-radius:25px;
+        border-bottom-right-radius:25px;
+        text-align: start;
+    }
+    
+    nav > .card >a.navBotoes{
+        display: block;
+        font-size: 15px;
+        font-weight: 300;
+        margin: 25% 0px;
+        padding: 20px 10px;
+        border-top-right-radius:25px;
+        border-bottom-right-radius:25px;
+        background-color: rgb(155, 4, 4);
+        color:white;
+    }
+    
+    nav > .card > .voltar > svg{
+        display: block;
+        width: 100%;
+        height: 70px;
+        
+}
+
+    nav > img.logo{
+        width: 80%;
+        height: 130px;
+        padding: 0px 5%;
+
+    }
+
+    nav > a.navBotoes2 > span{
+        display: none;
+    }
+
+    nav > a.roleta{
+        display: none;
+    }
+    nav > img.DeliveryMotoboy{
+        margin: 0;
+        padding-left:0px ;
+        padding-right: 0px;
+        display: block;
+        margin-top: 6%;
+        width:40px;
+        height: 70px;
+
+    }
+
+    nav > p{
+        padding-right: 0px;
+        display: block;
+        margin-top: 10%;
+
+    }
+
+                                                                /* main */
+                                                                /* inicio */
+
+
+    main > .principal > section.inicio > .texto{
+        width: 100%;
+        padding-left: 50px;
+        /* position: absolute; */
+        padding-bottom: 130px;
+
+        
+    }
+
+    main >.principal > section.inicio > .texto > h1{
+        font-size: 60px;
+    }
+
+    main > .principal > section.inicio > .texto > .cardsecundario{
+        display: grid;
+        align-items: start;
+        justify-content: start;
+    }
+
+    main > .principal > section.inicio > .texto > .cardsecundario > h1{
+        margin: 20px 0px;
+        font-size: 30px;
+    }
+    
+    main > .principal > section.inicio >.imagem{
+        /* display: inline-block; */
+        display: none;
+        padding-top: 70px;
+    }
+    
+    
+    
+    /* CARDAPIO */
+    
+    
+    .cardapio >.inicio > h1{
+        font-size: 40PX;
+    }
+    
+    .cardapio >.conteinersabores >.sabor{
+        padding: 10px 0px;
+        margin: 10px 0px;
+        width: 170px;
+    }
+    
+    
+    /* ENTREGA */
+
+    .entrega > img{
+        display: none;
+    }
+   
+}

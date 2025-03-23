@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Gidole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    margin: auto;
+}
+
+body{
+   
+    font-family: "Gidole", sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(155, 4, 4);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-top: 10px;
+    position: fixed;
+}
+
+nav > a.menu{
+    display: none;
+}
+
+nav > .card > a.navBotoes{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0px 15px;
+}
+
+nav > .card > .voltar > svg{
+        display: none;
+
+}
+
+nav > img.logo{
+    margin: auto;
+    width: 130px;
+    height: 130px;
+}
+
+nav > a.roleta{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0px 15px;
+    background-color: black;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+nav > a.navBotoes2 > span{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0px 30px;
+}
+
+
+nav > img.DeliveryMotoboy{
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+nav > p{
+    color: #F09C05;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 50px;
+
+}
+nav > p > strong{
+    color: aliceblue;
+    font-weight: bold;
+
+}
+
+
+nav > a.navBotoes:hover{
+    color: #F09C05;
+    font-size: 17px;
+    transform: scaleX(1.00);
+    transition: .2s;
+}
+
+nav > a.roleta:hover{
+    color: black;
+    background-color: white;
+    transform: scaleX(1.00);
+    transition: .2s;
+}
+
+nav > a.navBotoes2 > span:hover{
+    color: #F09C05;
+    font-size: 40px;
+    transform: scaleX(1.00);
+    transition: .2s;
+}
+
+                                                                            /* MAIN */
+                                                                            /* iNICIO */
+
+main >  .principal {
+    background-color: rgb(155, 4, 4);
+}
+
+main > .principal > section.inicio{
+    height: 675px;
+    background-color: rgb(155, 4, 4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    max-width: 1200px;
+    
+}
+
+main >.principal > section.inicio > .texto{
+    width: 40%;  
+}
+
+main >.principal > section.inicio > .texto > p{
+    font-family: "Parisienne", serif;
+    font-size: 30px;
+    color: white;
+    font-weight: 900;
+}
+
+main >.principal > section.inicio > .texto > h1{
+    font-family: "Boldonse", system-ui;
+    font-weight: 900;
+    font-size: 90px;
+    color: #F09C05;
+}
+
+
+main >.principal > section.inicio > .texto > .sabores > a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding-right: 10px;
+    text-shadow: 1px 1px 3px #F09C05;
+    
+}
+
+main >.principal > section.inicio > .texto > .cardsecundario{
+    margin-top:40px ;
+    align-content: start;
+    display: inline-flex;
+}
+
+main >.principal > section.inicio > .texto > .cardsecundario > a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-size: 13px;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+main >.principal > section.inicio > .texto > .cardsecundario > h1{
+    color: #F09C05;
+    font-size: 20px;
+    font-family: "Boldonse", system-ui;
+    margin-left: 70px;
+}
+
+
+main >.principal > section.inicio >.imagem{
+    text-align: end;
+    width: 50%;
+    margin-top: 50px;
+    padding-top: 50px;
+    
+    
+}
+
+main >.principal > section.inicio >.imagem > img{
+    width: 550px;
+    height: 550px;
+}
+
+
+                                /* CARDAPIO */
+
+
+.cardapio{
+    background-color: white;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.cardapio >.inicio{
+    background-color: rgba(255, 255, 255, 0.534);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid black;
+    
+} 
+
+.cardapio >.inicio > h1{
+    font-family: "Boldonse", system-ui;
+    font-weight: 900;
+    margin-top: 30px;
+    font-size: 80px;
+    color:rgb(155, 4, 4);
+}
+.cardapio > .inicio > .pesquisar{
+    display: flex;
+}
+
+.cardapio > .inicio > .pesquisar >input{
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    font-family: "Boldonse", system-ui;
+}
+
+.cardapio > .inicio > .pesquisar >input::placeholder{
+    color: #F09C05;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.cardapio > .inicio > .pesquisar > a > svg{
+    color: black;
+    width: 25px;
+}
+
+
+.cardapio > .inicio > a{
+    display: block;
+    text-decoration: none;
+    color: #F09C05;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.cardapio > .inicio > a:hover{
+    background-color: #F09C05;
+    color: black;
+    border: 1px solid #F09C05;
+    font-weight: 400;
+}
+
+.cardapio >.conteinersabores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cardapio >.conteinersabores >.sabor{
+    width: 200px;
+    margin: 3% 5%;
+    padding: 50px 20px;
+    border-radius: 15px;
+
+}
+
+.cardapio >.conteinersabores >.sabor:hover{
+    background-color: lightgrey;
+
+}
+.cardapio >.conteinersabores >.sabor > img{
+    height:100px;
+
+}
+
+.cardapio >.conteinersabores >.sabor >h2{
+    font-size: 20px;
+}
+
+.cardapio >.conteinersabores >.sabor >p{
+    font-size: 15px;
+}
+
+.cardapio >.conteinersabores >.sabor >a{
+    display: block;
+    text-decoration: none;
+    color: #F09C05;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.cardapio >.conteinersabores >.sabor >a:hover{
+    background-color: #F09C05;
+    color: black;
+    border: 1px solid #F09C05;
+    font-weight: 400;
+}
+
+
+
+/* ENTREGA */
+
+
+.entrega {
+    display: flex;
+    max-width: 1200px;
+    padding: 100px 0px;
+}
+
+.entrega > .texto{
+    text-align: start;
+}
+
+.entrega > .texto > h3{
+    color: #F09C05;
+    font-size: 20px;
+    font-family: "Parisienne", serif;
+    margin-bottom: 20px;
+}
+
+.entrega > .texto > h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.entrega > .texto > h2{
+    font-family: "Boldonse", system-ui;
+    color: #DE9008;
+    font-size: 30px;
+    font-weight: 100;
+    margin: 25px 0px;
+}
+
+.entrega > .texto > p{
+    color: rgba(0, 0, 0, 0.589);
+}
+.entrega > .texto > .imagens{
+    display: flex;
+    margin: 40px 0px;
+}
+
+.entrega > .texto > .imagens > div{
+    display: grid;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    padding-right: 40px;
+}
