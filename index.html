@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bella Napolli</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
     
     <link rel="stylesheet" href="style.css">
@@ -16,7 +16,6 @@
         <div class="card">
             <a href="#" class="navBotoes">CARDÁPIO</a>
             <a href="#" class="navBotoes">CONTATO</a>
-            <a href="#" class="navBotoes">HORARIO DE FUNCIONAMENTO</a>
             <a class="voltar" onclick="Voltar()">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#ff0000"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
             </a>
@@ -26,8 +25,10 @@
         <a href="#" class="navBotoes2"><span class="material-symbols-outlined">
             shopping_cart
             </span></a>
-            <img class="DeliveryMotoboy" src="imagensEvideos/DeliveryMotoboy.png" alt="DeliveryMotoboy">
-            <p class="textoDelivery">Entrega <strong>Gratis</strong> Em CANARANA</p>
+            <div class="delivery">
+                <img class="DeliveryMotoboy" src="imagensEvideos/DeliveryMotoboy.png" alt="DeliveryMotoboy">
+                <p class="textoDelivery">Entrega <strong>Gratis</strong> Em CANARANA</p>
+            </div>
     </nav>
     <main>
         <section class="principal">
@@ -288,7 +289,28 @@
                 </div>
             </div>
             <img src="imagensEvideos/caixaDePizza.png" alt="Caixa de pizza">
-        </section>
+       </section>
+          <section class="principal">
+            <section class="contato">
+                <div class="titulo">
+                    <h2>Alguma duvida ?</h2>
+                    <h1>CONTATO </h1>
+                </div>
+                <div class="conteudo">
+                    <img src="imagensEvideos/celular.png" alt="Celular">
+                    <div class="texto">
+                        <p>
+                            <span class="material-symbols-outlined">
+                                call
+                                </span>(74) 99929-0038
+                        </p>
+                        <p>
+                            <a href="https://www.instagram.com/pizzaria.bellanapolli/" target="_blank"><img src="imagensEvideos/instagramLogo.png" alt="instagramLogo">Pizzaria.bellanapolli</a>
+                            </p>
+                    </div>
+                </div>
+            </section>
+       </section>
     </main>
 
     <script src="script.js"></script>

@@ -32,7 +32,14 @@ nav > .card > a.navBotoes{
     color: white;
     text-decoration: none;
     font-weight: 600;
-    margin: 0px 15px;
+    padding: 40px;
+}
+
+nav > .card > a.navBotoes:hover{
+    color: #F09C05;
+    font-size: 17px;
+    transform: scaleX(1.00);
+    transition: .2s;
 }
 
 nav > .card > .voltar > svg{
@@ -41,7 +48,6 @@ nav > .card > .voltar > svg{
 }
 
 nav > img.logo{
-    margin: auto;
     width: 130px;
     height: 130px;
 }
@@ -50,7 +56,6 @@ nav > a.roleta{
     color: white;
     text-decoration: none;
     font-weight: 600;
-    margin: 0px 15px;
     background-color: black;
     width: 150px;
     height: 30px;
@@ -63,36 +68,34 @@ nav > a.navBotoes2 > span{
     text-decoration: none;
     font-size: 30px;
     font-weight: 600;
-    margin: 0px 30px;
 }
 
+nav > .delivery{
 
-nav > img.DeliveryMotoboy{
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+nav > .delivery> .DeliveryMotoboy{
     width: 80px;
     height: 80px;
 }
 
-nav > p{
+nav > .delivery > .textoDelivery{
     color: #F09C05;
-    text-decoration: none;
     font-weight: 600;
-    margin-right: 50px;
+    
 
 }
-nav > p > strong{
+nav > .delivery > .textoDelivery > strong{
     color: aliceblue;
     font-weight: bold;
 
 }
 
 
-nav > a.navBotoes:hover{
-    color: #F09C05;
-    font-size: 17px;
-    transform: scaleX(1.00);
-    transition: .2s;
-}
+
 
 nav > a.roleta:hover{
     color: black;
@@ -379,7 +382,6 @@ main >.principal > section.inicio >.imagem > img{
 .acompanhamentos > .conteudo > .refri > div > a{
     display: block;
     text-decoration: none;
-    
     margin: 10px;
     border: 1px solid rgba(0, 0, 0, 0.329);
     border-radius: 5px;
@@ -448,4 +450,62 @@ main >.principal > section.inicio >.imagem > img{
     margin: 0;
     padding-right: 40px;
     text-align: center;
+}
+
+
+
+/* CONTATO */
+
+.titulo{
+    text-align: center;
+}
+
+
+.titulo > h2 {
+    color: #F09C05;
+    font-size: 25px;
+    font-family: "Parisienne", serif;
+    padding: 30px ;
+}
+
+.titulo > h1{
+    font-family: "Boldonse", system-ui;
+    color: white;
+    font-size: 60px;
+}
+
+.conteudo{
+    display: flex;
+}
+
+.conteudo > .texto{
+    color: white;
+    font-size: 20px;
+    font-family: "Boldonse" , system-ui;
+    
+
+}
+
+.conteudo > .texto > p{
+    padding: 20px ;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+.conteudo > .texto > p > span {
+    font-size: 30px; 
+}
+.conteudo > .texto > p > a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.conteudo > .texto > p > a > img{
+    width: 30px;
+}
+.conteudo > img{
+    height: 450px;
+    padding: 20px;
+    
 }

@@ -18,6 +18,7 @@
         margin-top: 10%;
         padding-left: 2%;
         padding-right: 2%;
+   
     }
     
     nav > a.menu > svg{
@@ -135,6 +136,7 @@
         padding: 10px 0px;
         margin: 10px 0px;
         width: 170px;
+        height: 250px;
     }
     
 
@@ -150,7 +152,9 @@
     }
 
     .acompanhamentos > .conteudo{
-        display: grid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .acompanhamentos > .conteudo > .imagem{
@@ -190,4 +194,22 @@
         padding: 0;
     }
    
+}
+
+
+/* CONTATO */
+
+
+.titulo > h1{
+    font-size: 40px
+}
+
+.conteudo{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.conteudo > img{ 
+    margin: auto;
+    height: 350px;
 }
