@@ -71,9 +71,9 @@ nav > a.navBotoes2 > span{
 }
 
 nav > .delivery{
-
+    margin-top: 10px;
     display: flex;
-    align-items: center;
+
 
 }
 
@@ -287,6 +287,47 @@ main >.principal > section.inicio >.imagem > img{
 
 }
 
+.cardapio >.conteinersabores > .botao > a{
+    display: block;
+    text-decoration: none;
+    background-color:#F09C05;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.cardapio >.conteinersabores > .botao2 > a{
+    display: block;
+    text-decoration: none;
+    background-color:#F09C05;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.cardapio >.conteinersabores > .botao3 > a{
+    display: block;
+    text-decoration: none;
+    background-color:#F09C05;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+
+
 .cardapio >.conteinersabores >.sabor:hover{
     background-color: lightgrey;
 
@@ -476,6 +517,14 @@ main >.principal > section.inicio >.imagem > img{
 
 .conteudo{
     display: flex;
+    justify-content: center;
+    
+}
+
+.conteudo > img{
+    height: 450px;
+    padding: 20px;
+    
 }
 
 .conteudo > .texto{
@@ -503,9 +552,4 @@ main >.principal > section.inicio >.imagem > img{
 
 .conteudo > .texto > p > a > img{
     width: 30px;
-}
-.conteudo > img{
-    height: 450px;
-    padding: 20px;
-    
 }
