@@ -87,7 +87,7 @@
 
     nav > img.logo{
         height: 130px;
-        padding: 0px 3%;
+        padding: 0px 5%;
 
     }
 
@@ -99,7 +99,7 @@
         display: block;
         margin-right: 0;
         margin-top: 8%;
-        width: 100px;
+        width: 110px;
         font-size: 12px;
 
     }
@@ -274,6 +274,18 @@
     .acompanhamentos > .conteudo > .refri > div > a{
         font-size: 10px;
     }
+
+
+    
+    /* CARDS */
+
+    .conteiner{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
     .conteinerMetade{
         margin: 0;
         padding: 0;
