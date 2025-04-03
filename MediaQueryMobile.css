@@ -55,7 +55,33 @@
         width: 100%;
         height: 70px;
         
-}
+    }
+
+    nav > .card > .delivery{
+        display: grid;
+        margin-top: 10px;
+    }
+    nav > .card > .delivery > img.DeliveryMotoboy{
+        height: 80px;
+        width: 80px;
+        margin: auto;
+        
+    }
+    
+    nav > .card > .delivery > .textoDelivery{
+        color: rgb(155, 4, 4);
+        font-weight: 600;
+        text-align: center;
+
+    }
+
+    nav >.card > .delivery > .textoDelivery > strong{
+        color: #F09C05;
+        font-weight: bold;
+    
+    }
+
+
 
     nav > img.logo{
         height: 130px;
@@ -63,28 +89,26 @@
 
     }
 
-    nav > a.navBotoes2 > span{
+    nav > .navBotoes2 > span{
         display: none;
     }
+    
+    nav > a.Botaoroleta{
+        display: block;
+        margin-top: 12%;
 
-    nav > a.roleta{
-        display: none;
     }
     nav > .delivery > img.DeliveryMotoboy{
         margin: 0;
         padding-left:0px ;
         padding-right: 0px;
-        display: block;
-        margin-top: 6%;
-        width:60px;
-        height: 70px;
+        display: none;
 
     }
 
     nav > .delivery > .textoDelivery{
         padding-right: 0px;
-        display: block;
-        margin-top: 10%;
+        display: none;
 
     }
 
@@ -122,6 +146,36 @@
         display: none;
         padding-top: 70px;
     }
+
+
+    /* Carrinho */
+
+    .CarrinhodeCompras{
+        display: block;
+        position: fixed;
+        top: 90%;
+        left: 80%;
+        
+    }
+    
+    .CarrinhodeCompras > .navBotoes2{
+        border: none;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        
+    }
+
+    .CarrinhodeCompras> .navBotoes2 > span{
+        border: none;
+        color: rgb(155, 4, 4);
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+   
     
     
     
@@ -139,6 +193,21 @@
         height: 250px;
     }
     
+
+    /*ROLETA  */
+
+    .roleta{
+        height: 100%;
+        
+    }
+    
+    .SistemaRotela{
+        margin-top: 40px;
+        padding: 20px;
+        width: 350px;
+        
+    }
+
 
     /* ACOMPANHAMENTOS */
 

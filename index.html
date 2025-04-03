@@ -1,334 +1,559 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bella Napolli</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="MediaQueryMobile.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bella Napolli</title>
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="MediaQueryMobile.css">
 </head>
+
 <body>
-    <nav>
-        <a class="menu" onclick="MenuHamburger()"><svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
-        <div class="card">
-            <a href="#carpadio" class="navBotoes">CARDÁPIO</a>
-            <a href="#contato" class="navBotoes">CONTATO</a>
-            <a class="voltar" onclick="Voltar()">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#ff0000"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
-            </a>
-        </div>
-        <img class="logo" src="imagensEvideos/pizzarialogo-removebg-preview (3).png" alt="logo">
-        <a href="#" class="roleta">Roleta de sabores</a>
-        <a href="#" class="navBotoes2"><span class="material-symbols-outlined">
+   <nav>
+      <a class="menu" onclick="MenuHamburger()">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e3e3e3">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+         </svg>
+      </a>
+      <div class="card">
+         <a href="#carpadio" class="navBotoes">CARDÁPIO</a>
+         <a href="#contato" class="navBotoes">CONTATO</a>
+         
+         <a class="voltar" onclick="Voltar()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#ff0000">
+               <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+            </svg>
+         </a>
+         <div class="delivery">
+            <img class="DeliveryMotoboy" src="imagensEvideos/DeliveryMotoboy.png" alt="DeliveryMotoboy">
+            <p class="textoDelivery">Entrega <strong>Gratis</strong> Em CANARANA</p>
+         </div>
+      </div>
+      <img class="logo" src="imagensEvideos/pizzarialogo-removebg-preview (3).png" alt="logo">
+      <a href="#" class="Botaoroleta" onclick="r()">Roleta de sabores</a>
+      <button class="navBotoes2" onclick="verCarrinho()"><span class="material-symbols-outlined">
             shopping_cart
-            </span></a>
-            <div class="delivery">
-                <img class="DeliveryMotoboy" src="imagensEvideos/DeliveryMotoboy.png" alt="DeliveryMotoboy">
-                <p class="textoDelivery">Entrega <strong>Gratis</strong> Em CANARANA</p>
-            </div>
-    </nav>
-    <main>
-        <section class="principal">
-            <section class="inicio">
-                <div class="texto">
-                    <p>Mais Pedidas</p>
-                    <h1>PIZZAS</h1>
-                        <div class="sabores">
-                            <a href="#" class="carneseca">Diplomata</a>
-                            <a href="#" class="atum">Atum</a>
-                            <a href="#" class="portuguesa">Portuguesa</a>
-                            <a href="#" class="napolitana">Napolitana</a>
-                        </div>
-                        <div class="cardsecundario">
-                            <a href="#carpadio">CARDAPIO COMPLETO</a>
-                            <H1> $29,99 </H1>
-                        </div>
-                </div>
-                <div class="imagem">
-                    <img src="imagensEvideos/pizza-.png" alt="Pizza">
-                </div>
-            </section>
-        </section>
-        <section class="cardapio" id="carpadio">
-            <div class="inicio">
-                <h1>CARDÁPIO</h1>
-                <div class="pesquisar">
-                    <input type="text" name="" id="" placeholder="Procurar Sabor">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></a>
-                </div>
-            </div>
-           
-            <div class="conteinersabores">
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Atum</h2>
-                    <p class="ingredientes">
-                        Atum, mussarela e cebola
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Alemã</h2>
-                    <p class="ingredientes">
-                        Mussarela, calabresa ralada, cebola e catupiry
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Americana</h2>
-                    <p class="ingredientes">
-                        Mussarela, atum, palmito e ervilha
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Baiana</h2>
-                    <p class="ingredientes">
-                        Calabresa ralada, mussarela e pimenta
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Bauru</h2>
-                    <p class="ingredientes">
-                        Presunto, mussarela e tomate
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Bacon</h2>
-                    <p class="ingredientes">
-                        Bacon e mussarela
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-
-                <div class="botao">
-                    <a href="">Mais Sabores</a>
-                </div>
-
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Brasileirinha</h2>
-                    <p class="ingredientes">
-                        Frango, mussarela, ervilha, ovo e catupiry
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Calabresa</h2>
-                    <p class="ingredientes">
-                        Mussarela, calabresa e cebola
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Canadense</h2>
-                    <p class="ingredientes">
-                        Mussarela e lombo canadense
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Carne Seca</h2>
-                    <p class="ingredientes">
-                        Mussarela, carne de sol, tomate e cebola
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Champignon</h2>
-                    <p class="ingredientes">
-                        Champignon e mussarela
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Diplomata</h2>
-                    <p class="ingredientes">
-                        Frango, catupiry, milho e bacon
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-
-                <div class="botao2">
-                    <a href="">Mais Sabores</a>
-                </div>
-
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Frango Catupiry</h2>
-                    <p class="ingredientes">
-                        Frango, catupiry e mussarela
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Frango com Cheddar</h2>
-                    <p class="ingredientes">
-                        Frango, cheddar e mussarela
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Mexicana</h2>
-                    <p class="ingredientes">
-                        Atum, bacon, mussarela e catupiry
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Milho</h2>
-                    <p class="ingredientes">
-                        Mussarela e milho
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Napolitana</h2>
-                    <p class="ingredientes">
-                        Mussarela, parmesão e tomate
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Palmito</h2>
-                    <p class="ingredientes">
-                       Mussarela e palmito
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-
-                <div class="botao3">
-                    <a href="">Mais Sabores</a>
-                </div>
-
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Toscana</h2>
-                    <p class="ingredientes">
-                       Calabresa ralada e mussarela
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Tomate Seco</h2>
-                    <p class="ingredientes">
-                       Mussarela, tomate seco e manjericão
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Palmito</h2>
-                    <p class="ingredientes">
-                       Mussarela e palmito
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                <div class="sabor">
-                    <img src="imagensEvideos/pizza-.png" alt="">
-                    <h2>Três Queijos</h2>
-                    <p class="ingredientes">
-                       Catupiry, cheddar e mussarela
-                    </p>
-                    <a href="#">adicionar ao carrinho</a>
-                </div>
-                
-            </div>
-        </section>
-        <section class="principal">
-         <section class="acompanhamentos">
+         </span></button>
+      <div class="delivery">
+         <img class="DeliveryMotoboy" src="imagensEvideos/DeliveryMotoboy.png" alt="DeliveryMotoboy">
+         <p class="textoDelivery">Entrega <strong>Gratis</strong> Em CANARANA</p>
+      </div>
+   </nav>
+   <main>
+      <section class="principal">
+         <section class="inicio">
             <div class="texto">
-                <h2>Melhor pizza,</h2>
-                <h1>Melhor acompanhamento!</h1>
+               <p>Mais Pedidas</p>
+               <h1>PIZZAS</h1>
+               <div class="sabores">
+                  <a class="carneseca">Diplomata</a>
+                  <a class="atum">Atum</a>
+                  <a class="portuguesa">Portuguesa</a>
+                  <a class="napolitana">Napolitana</a>
+               </div>
+               <div class="cardsecundario">
+                  <a href="#carpadio"><button>Carpadio Completo</button></a>
+                  <H1> $29,99 </H1>
+               </div>
             </div>
-            <div class="conteudo">
-                <div class="imagem">
-                    <img src="imagensEvideos/acompanhamento.png" alt="acompanhamento">
-                </div>
-                <div class="refri">
-                    <div>
-                        <img src="imagensEvideos/pepsi.png" alt="pepsi">
-                        <h1>Pepsi 1L</h1>
-                        <a href="#">ADICIONAR ACOMPANHAMENTO</a>
-                    </div>
-                    <div>
-                        <img src="imagensEvideos/guarana.png" alt="guarana">
-                        <h1>Guaraná 1L</h1>
-                        <a href="#">ADICIONAR ACOMPANHAMENTO</a>
-                    </div>
-                </div>
+            <div class="imagem">
+               <img src="imagensEvideos/pizza-.png" alt="Pizza">
             </div>
          </section>
-        </section>
-
-        <section class="entrega" >
-            <div class="texto">
-                <h3>Entrega rápida</h3>
-                <h1>Sua pizza favorita,</h1>
-                <h2>a caminho !</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi ipsum facilis at, reprehenderit ducimus? Magnam maxime rem molestias laudantium sit numquam ea, et suscipit excepturi quae nostrum eveniet ut!
-                </p>
-                <div class="imagens">
-                    <div><img src="imagensEvideos/img1.png" alt="">
-                    <p>Entrega Rápida</p>
-                    </div>
-                    <div><img src="imagensEvideos/img2.png" alt="">
-                    <p>Frete grátis em Canarana</p>
-                    </div>
-                    <div><img src="imagensEvideos/img3.png" alt="">
-                    <p>Entrega na sua casa</p>
-                    </div>
-
-                </div>
+      </section>
+      <section class="cardapio" id="carpadio">
+         <div class="inicio">
+            <h1>CARDÁPIO</h1>
+            <div class="pesquisar">
+               <input type="text" name="" id="" placeholder="Procurar Sabor">
+               <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                     <path
+                        d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                  </svg>
+               </a>
             </div>
-            <img src="imagensEvideos/caixaDePizza.png" alt="Caixa de pizza">
-       </section>
-          <section class="principal">
-            <section class="contato" id="contato">
-                <div class="titulo">
-                    <h2>Alguma duvida ?</h2>
-                    <h1>CONTATO </h1>
-                </div>
-                <div class="conteudo">
-                    <img src="imagensEvideos/celular.png" alt="Celular">
-                    <div class="texto">
-                        <p>
-                            <span class="material-symbols-outlined">
-                                call
-                                </span>(74) 99929-0038
-                        </p>
-                        <p>
-                            <a href="https://www.instagram.com/pizzaria.bellanapolli/" target="_blank"><img src="imagensEvideos/instagramLogo.png" alt="instagramLogo">Pizzaria.bellanapolli</a>
-                            </p>
-                    </div>
-                </div>
-            </section>
-       </section>
-    </main>
+         </div>
+         <div class="conteinersabores">
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Atum</h2>
+               <p class="ingredientes">
+                  Atum, mussarela e cebola
+               </p>
+               <button class="add-to-cart" onclick="addCard()">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Alemã</h2>
+               <p class="ingredientes">
+                  Mussarela, calabresa ralada, cebola e catupiry
+               </p>
+               <button class="add-to-cart" onclick="addCard()">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Americana</h2>
+               <p class="ingredientes">
+                  Mussarela, atum, palmito e ervilha
+               </p>
+               <button class="add-to-cart" onclick="addCard()">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Baiana</h2>
+               <p class="ingredientes">
+                  Calabresa ralada, mussarela e pimenta
+               </p>
+               <button class="add-to-cart" onclick="addCard()">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Bauru</h2>
+               <p class="ingredientes">
+                  Presunto, mussarela e tomate
+               </p>
+               <button class="add-to-cart" onclick="addCard()">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Bacon</h2>
+               <p class="ingredientes">
+                  Bacon e mussarela
+               </p>
+               <button class="add-to-cart" onclick="addCard()">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Brasileirinha</h2>
+               <p class="ingredientes">
+                  Frango, mussarela, ervilha, ovo e catupiry
+               </p>
+               <button class="add-to-cart" onclick="addCard()">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Calabresa</h2>
+               <p class="ingredientes">
+                  Mussarela, calabresa e cebola
+               </p>
+               <button class="add-to-cart" onclick="addCard()">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Canadense</h2>
+               <p class="ingredientes">
+                  Mussarela e lombo canadense
+               </p>
+               <button class="add-to-cart" onclick="addCard()">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Carne Seca</h2>
+               <p class="ingredientes">
+                  Mussarela, carne de sol, tomate e cebola
+               </p>
+               <button class="add-to-cart" onclick="addCardCARNE()">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Champignon</h2>
+               <p class="ingredientes">
+                  Champignon e mussarela
+               </p>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Diplomata</h2>
+               <p class="ingredientes">
+                  Frango, catupiry, milho e bacon
+               </p>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Frango Catupiry</h2>
+               <p class="ingredientes">
+                  Frango, catupiry e mussarela
+               </p>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Frango com Cheddar</h2>
+               <p class="ingredientes">
+                  Frango, cheddar e mussarela
+               </p>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Mexicana</h2>
+               <p class="ingredientes">
+                  Atum, bacon, mussarela e catupiry
+               </p>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Milho</h2>
+               <p class="ingredientes">
+                  Mussarela e milho
+               </p>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Napolitana</h2>
+               <p class="ingredientes">
+                  Mussarela, parmesão e tomate
+               </p>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Palmito</h2>
+               <p class="ingredientes">
+                  Mussarela e palmito
+               </p>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Toscana</h2>
+               <p class="ingredientes">
+                  Calabresa ralada e mussarela
+               </p>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Tomate Seco</h2>
+               <p class="ingredientes">
+                  Mussarela, tomate seco e manjericão
+               </p>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Palmito</h2>
+               <p class="ingredientes">
+                  Mussarela e palmito
+               </p>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+            <div class="sabor">
+               <img src="imagensEvideos/pizza-.png" alt="">
+               <h2>Três Queijos</h2>
+               <p class="ingredientes">
+                  Catupiry, cheddar e mussarela
+               </p>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+            </div>
+         </div>
+         <div class="botao" onclick="carregarSabores(this)">
+            <button>Mais Sabores</button>
+         </div>
 
-    <script src="script.js"></script>
 
+                                                       <!-- ROLETA -->
+
+         <div class="roleta">
+            <div class="SistemaRotela">
+               <h1>Roleta de Sabores</h1>
+               <p>Gire a roleta e descubra qual será seu próximo sabor favorito!</p>
+               <div class="folha">
+                  <img id="imagemRoleta" src="imagensEvideos/pizzaRoleta.png" alt="pizza">
+                  <div id="btnPlay" class="btnRoleta" onclick="playOnClick()">GIRAR</div>
+               </div>
+               <div class="respostaRoleta">
+                  <p class="pRes1">Seu Sabor escolhido é :</p>
+                  <p id="resposta"></p>
+                 
+               </div>
+               <div class="cardsRoleta">
+                  <buttom onclick="v()" class="voltar">
+                     <svg class="voltarCard" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                        fill="rgb(155, 4, 4)">
+                        <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+                     </svg>
+                  </buttom>
+                  <button class="RoletaCarrinho" onclick="verCarrinho()">Adicionar ao Carrinho</button>
+               </div>
+            </div>
+         </div>
+
+         <!-- <div class="carrinho">
+         </div> -->
+         
+         <div class="CarrinhodeCompras">
+            <button class="navBotoes2" onclick="verCarrinho()"><span class="material-symbols-outlined">
+               shopping_cart
+            </span></button>
+         </div>
+
+
+
+         <div class="conteiner">
+            <div class="tamanho">
+               <h1>Qual Tamanho ?</h1>
+               <div class="card">
+                  <div class="p">
+                     <button>P</button>
+                     <h3>4 Fatias</h3>
+                     <h3>29,99</h3>
+                  </div>
+                  <div class="m">
+                     <button>M</button>
+                     <h3>6 Fatias</h3>
+                     <h3>39,99</h3>
+                  </div>
+                  <div class="g">
+                     <button>G</button>
+                     <h3>8 Fatias</h3>
+                     <h3>44,99</h3>
+                  </div>
+                  <div class="gg">
+                     <button>GG</button>
+                     <h3>10 Fatias</h3>
+                     <h3>54,99</h3>
+                  </div>
+               </div>
+               <button onclick="v()" class="voltar">
+                  <svg class="voltarCard" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                     fill="rgb(155, 4, 4)">
+                     <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+                  </svg>
+               </button>
+            </div>
+         </div>
+         <div class="conteinerCarne">
+            <div class="tamanho">
+               <h1>Qual Tamanho ?</h1>
+               <div class="card">
+                  <div class="p">
+                     <button>P</button>
+                     <h3>4 Fatias</h3>
+                     <h3>34,99</h3>
+                  </div>
+                  <div class="m">
+                     <button>M</button>
+                     <h3>6 Fatias</h3>
+                     <h3>44,99</h3>
+                  </div>
+                  <div class="g">
+                     <button>G</button>
+                     <h3>8 Fatias</h3>
+                     <h3>54,99</h3>
+                  </div>
+                  <div class="gg">
+                     <button>GG</button>
+                     <h3>10 Fatias</h3>
+                     <h3>64,99</h3>
+                  </div>
+               </div>
+               <p onclick="v()" class="voltar">
+                  <svg class="voltarCard" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                     fill="rgb(155, 4, 4)">
+                     <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+                  </svg>
+               </p>
+            </div>
+         </div>
+         <div class="conteinerMetade">
+            <div class="tamanho">
+               <div class="metade">
+                  <h1>Quais sabores sua pizza terá ? </h1>
+                  <select name="sabores1">
+                     <optgroup label="Sabor 1">
+                        <option value="Atum">Atum</option>
+                        <option value="Alemã">Alemã</option>
+                        <option value="Americana">Americana</option>
+                        <option value="Baiana">Baiana</option>
+                        <option value="Bauru">Bauru</option>
+                        <option value="Bacon">Bacon</option>
+                        <option value="Brasileirinha">Brasileirinha</option>
+                        <option value="Calabresa">Calabresa</option>
+                        <option value="Canadense">Canadense</option>
+                        <option value="Carne Seca">Carne Seca</option>
+                        <option value="Champignon">Champignon</option>
+                        <option value="Diplomata">Diplomata</option>
+                        <option value="Frango Catupiry">Frango Catupiry</option>
+                        <option value="Frango com Cheddar">Frango com Cheddar</option>
+                        <option value="Mexicana">Mexicana</option>
+                        <option value="Milho">Milho</option>
+                        <option value="Napolitana">Napolitana</option>
+                        <option value="Palmito">Palmito</option>
+                        <option value="Toscana">Toscana</option>
+                        <option value="Tomate Seco">Tomate Seco</option>
+                        <option value="Três Queijos">Três Queijos</option>
+                     </optgroup>
+                  </select>
+                  <select name="sabores2">
+                     <optgroup label="Sabor 2">
+                        <option value="Atum">Atum</option>
+                        <option value="Alemã">Alemã</option>
+                        <option value="Americana">Americana</option>
+                        <option value="Baiana">Baiana</option>
+                        <option value="Bauru">Bauru</option>
+                        <option value="Bacon">Bacon</option>
+                        <option value="Brasileirinha">Brasileirinha</option>
+                        <option value="Calabresa">Calabresa</option>
+                        <option value="Canadense">Canadense</option>
+                        <option value="Carne Seca">Carne Seca</option>
+                        <option value="Champignon">Champignon</option>
+                        <option value="Diplomata">Diplomata</option>
+                        <option value="Frango Catupiry">Frango Catupiry</option>
+                        <option value="Frango com Cheddar">Frango com Cheddar</option>
+                        <option value="Mexicana">Mexicana</option>
+                        <option value="Milho">Milho</option>
+                        <option value="Napolitana">Napolitana</option>
+                        <option value="Palmito">Palmito</option>
+                        <option value="Toscana">Toscana</option>
+                        <option value="Tomate Seco">Tomate Seco</option>
+                        <option value="Três Queijos">Três Queijos</option>
+                     </optgroup>
+                  </select>
+
+               </div>
+               <h1>Qual o tamanho ? </h1>
+               <div class="card">
+                  <div class="m">
+                     <button>M</button>
+                     <h3>6 Fatias</h3>
+                     <h3>39,99</h3>
+                     <h3 class="carne">Sabor Com <strong>CARNE SECA</strong> : 44,99</h3>
+                  </div>
+                  <div class="g">
+                     <button>G</button>
+                     <h3>8 Fatias</h3>
+                     <h3>44,99</h3>
+                     <h3 class="carne">Sabor Com <strong>CARNE SECA</strong> : 54,99</h3>
+                  </div>
+                  <div class="gg">
+                     <button>GG</button>
+                     <h3>10 Fatias</h3>
+                     <h3>54,99</h3>
+                     <h3 class="carne">Sabor Com <strong>CARNE SECA</strong> : 64,99</h3>
+
+                  </div>
+               </div>
+               <button onclick="v()" class="voltar">
+                  <svg class="voltarCard" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                     fill="rgb(155, 4, 4)">
+                     <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+                  </svg>
+               </button>
+            </div>
+         </div>
+      </section>
+      <section class="principal">
+         <section class="acompanhamentos">
+            <div class="texto">
+               <h2>Melhor pizza,</h2>
+               <h1>Melhor acompanhamento!</h1>
+            </div>
+            <div class="conteudo">
+               <div class="imagem">
+                  <img src="imagensEvideos/acompanhamento.png" alt="acompanhamento">
+               </div>
+               <div class="refri">
+                  <div>
+                     <img src="imagensEvideos/pepsi.png" alt="pepsi">
+                     <h1>Pepsi 1L</h1>
+                     <a href="#">ADICIONAR ACOMPANHAMENTO</a>
+                  </div>
+                  <div>
+                     <img src="imagensEvideos/guarana.png" alt="guarana">
+                     <h1>Guaraná 1L</h1>
+                     <a href="#">ADICIONAR ACOMPANHAMENTO</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </section>
+      <section class="entrega">
+         <div class="texto">
+            <h3>Entrega rápida</h3>
+            <h1>Sua pizza favorita,</h1>
+            <h2>a caminho !</h2>
+            <p>
+               Desfrute da melhor pizza da cidade com nossa entrega delivery grátis e super-rápida em Canarana! Peça
+               agora e receba sua pizza quentinha no conforto da sua casa, com toda a qualidade e sabor que você merece.
+            </p>
+            <div class="imagens">
+               <div>
+                  <img src="imagensEvideos/img1.png" alt="">
+                  <p>Entrega Rápida</p>
+               </div>
+               <div>
+                  <img src="imagensEvideos/img2.png" alt="">
+                  <p>Frete grátis em Canarana</p>
+               </div>
+               <div>
+                  <img src="imagensEvideos/img3.png" alt="">
+                  <p>Entrega na sua casa</p>
+               </div>
+            </div>
+         </div>
+         <img src="imagensEvideos/caixaDePizza.png" alt="Caixa de pizza">
+      </section>
+      <section class="principal">
+         <section class="contato" id="contato">
+            <div class="titulo">
+               <h2>Alguma duvida ?</h2>
+               <h1>CONTATO </h1>
+            </div>
+            <div class="conteudo">
+               <img src="imagensEvideos/celular.png" alt="Celular">
+               <div class="texto">
+                  <p>
+                     <span class="material-symbols-outlined">
+                        call
+                     </span>(74) 99929-0038
+                  </p>
+                  <p>
+                     <a href="https://www.instagram.com/pizzaria.bellanapolli/" target="_blank"><img
+                           src="imagensEvideos/instagramLogo.png" alt="instagramLogo">Pizzaria.bellanapolli</a>
+                  </p>
+               </div>
+            </div>
+         </section>
+      </section>
+   </main>
+   <script>
+      var cardCarne = document.querySelector('.conteinerCarne')
+      function addCardCARNE() {
+         cardCarne.style.display = 'flex'
+      }
+   </script>
+   <script src="script.js"></script>
 </body>
+
 </html>
