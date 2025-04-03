@@ -47,6 +47,10 @@ nav > .card > .voltar > svg{
 
 }
 
+nav >.card > .delivery{
+    display: none;
+}
+
 nav > img.logo{
     width: 130px;
     height: 130px;
