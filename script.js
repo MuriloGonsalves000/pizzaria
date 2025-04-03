@@ -133,13 +133,12 @@ function m(){
 
 function r(){
     document.querySelector('.roleta').style.display = 'block'
-    document.querySelector('.CarrinhodeCompras').style.display = 'none'
 }
 
 function v(){
     cardTamanho.style.display = 'none'
     cardMeio.style.display = 'none'
     document.querySelector('.roleta').style.display = 'none'
-    document.querySelector('.CarrinhodeCompras').style.display = 'block'
+
 }
 

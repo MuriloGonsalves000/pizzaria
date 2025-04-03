@@ -96,6 +96,8 @@
     nav > a.Botaoroleta{
         display: block;
         margin-top: 12%;
+        width: 120px;
+        font-size: 14px;
 
     }
     nav > .delivery > img.DeliveryMotoboy{
@@ -198,16 +200,38 @@
 
     .roleta{
         height: 100%;
+        display: flex;
+        align-content: center;
+        width: 100%;
+        padding: 0;
+        
+        
         
     }
     
     .SistemaRotela{
-        margin-top: 40px;
-        padding: 20px;
-        width: 350px;
+        width: 90%;
         
     }
 
+
+
+    /* CARPADIO */
+
+
+    .sabor{
+        height: 200px;
+    }
+    .add-to-cart{
+        font-size: 12px;
+    }
+    
+    .card-meio-a-meio{
+        font-size: 12px;
+        
+    }
+
+   
 
     /* ACOMPANHAMENTOS */
 
@@ -237,6 +261,10 @@
     .acompanhamentos > .conteudo > .refri > div > img{
         width: 130px;
         height: 130px;
+    }
+    .acompanhamentos > .conteudo > .refri > div > h1{
+        font-size: 18px;
+        
     }
     .acompanhamentos > .conteudo > .refri > div > a{
         font-size: 10px;
@@ -281,6 +309,10 @@
     .conteudo > img{ 
         margin: auto;
         height: 450px;
+    }
+
+    .conteudo > .texto{
+        background-color: #9B0404;
     }
 
 
