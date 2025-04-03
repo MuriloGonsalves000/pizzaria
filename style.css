@@ -951,6 +951,7 @@ select{
 .conteudo > .texto > p > a {
     color: white;
     text-decoration: none;
+    font-size: 15px;
 
 }
 
