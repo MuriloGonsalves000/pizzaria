@@ -314,6 +314,13 @@
         width: 80px;
     }
 
+    .conteinerMetade > .tamanho > h1{
+        font-size: 25px;
+    }
+
+    .carne{
+        width: 80px;
+    }
 
     
     /* ENTREGA */
