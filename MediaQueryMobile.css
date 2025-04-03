@@ -365,6 +365,8 @@
     .conteudo > .texto{
         background-color: #9B0404;
     }
-
+    .conteudo > .texto > p > a{
+        font-size: 15px;
+    }
 
 }
