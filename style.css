@@ -24,39 +24,48 @@ nav{
     position: fixed;
 }
 
-nav > a.menu{
+nav  a.menu{
     display: none;
 }
 
-nav > .card > a.navBotoes{
+nav  .card  .navBotoes{
+    background-color: #9B0404;
+    border: none;
+}
+
+nav  .card  .navBotoes a{
+    font-family: "Gidole", sans-serif;
     color: white;
     text-decoration: none;
     font-weight: 600;
     padding: 40px;
+
 }
 
-nav > .card > a.navBotoes:hover{
+nav .card .navBotoes a:hover{
     color: #F09C05;
-    font-size: 17px;
-    transform: scale(1.10);
+
+}
+nav  .card  .navBotoes:hover{
+    transform: scale(1.20);
     transition: .4s;
 }
 
-nav > .card > .voltar > svg{
+nav  .card  .voltar{
         display: none;
 
 }
 
-nav >.card > .delivery{
+nav .card  .delivery{
     display: none;
 }
 
-nav > img.logo{
+nav img.logo{
     width: 130px;
     height: 130px;
 }
 
-nav > a.Botaoroleta{
+nav a.Botaoroleta{
     color: white;
     text-decoration: none;
     font-weight: 600;
@@ -68,13 +77,27 @@ nav > a.Botaoroleta{
     border-radius: 5px;
     cursor: pointer;
 }
+nav .cart{
+    display:flex;
+}
 
-nav > button.navBotoes2{
+.cartP{
+    display: none;
+    background-color: #EAB308;
+    border-radius: 50%;
+    color: white;
+    width: 12px;
+    padding: 2px;
+    font-size: 12px;
+    text-align: center;
+    margin-left: -15px;
+}
+nav  .navBotoes2{
     border: none;
     color: #991B1B;
     height: 20px;
 }
-nav > .navBotoes2 > span{
+nav  .navBotoes2  span{
     background-color: rgb(155, 4, 4);
     border: none;
     color: white;
@@ -83,25 +106,25 @@ nav > .navBotoes2 > span{
     font-weight: 600;
 }
 
-nav > .delivery{
+nav  .delivery{
     margin-top: 10px;
     display: flex;
 
 
 }
 
-nav > .delivery> .DeliveryMotoboy{
+nav  .delivery .DeliveryMotoboy{
     width: 80px;
     height: 80px;
 }
 
-nav > .delivery > .textoDelivery{
+nav  .delivery  .textoDelivery{
     color: #F09C05;
     font-weight: 600;
     
 
 }
-nav > .delivery > .textoDelivery > strong{
+nav  .delivery  .textoDelivery > strong{
     color: aliceblue;
     font-weight: bold;
 
@@ -110,14 +133,14 @@ nav > .delivery > .textoDelivery > strong{
 
 
 
-nav > .Botaoroleta:hover{
+nav  .Botaoroleta:hover{
     color: black;
     background-color: white;
     transform: scale(1.10);
     transition: .4s;
 }
 
-nav > .navBotoes2 > span:hover{
+ .navBotoes2 > span:hover{
     color: #F09C05;
     transform: scale(1.20);
     transition: .2s;
@@ -318,6 +341,10 @@ main >.principal > section.inicio >.imagem > img{
 
 }
 
+.ingredientes{
+    height: 40px;
+}
+
 .cardapio > .botao {
     display: block;
     text-decoration: none;
@@ -325,27 +352,23 @@ main >.principal > section.inicio >.imagem > img{
     color: white;
     margin: 10px auto;
     border-radius: 5px;
-    font-size: 15px;
-    padding: 15px 30px;
+    font-size: 12px;
+    height: 40px;
+    width: 150px;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.493);
     text-transform: uppercase;
-    font-weight: 900;
+    font-family: "Boldonse", system-ui;
+    cursor: pointer;
 }
 
-.cardapio > .botao > button {
-    background: none;
-    outline: none;
-    border: none;
-    color: white;
-    font-weight: 900;
-    cursor: pointer;
-    
-}
 
 .cardapio > .botao:hover{
-    cursor: pointer;
-    background-color: #e19405;
-    transition: .2s linear;
+    transition: .5s;
+    transform: scale(1.10);
+    background-color:#9B0404;
 }
+
 
 .cardapio >.conteinersabores > .botao2{
     display: none;
@@ -459,6 +482,7 @@ main >.principal > section.inicio >.imagem > img{
         background-color: rgba(0, 0, 0, 0.651);
         align-items: center;
         justify-content: center;
+        
     }
   .SistemaRotela{
     
@@ -466,10 +490,15 @@ main >.principal > section.inicio >.imagem > img{
     align-items: center;
     justify-items: center;
     width: 800px;
-    margin: auto;
+    height:95%;
+    margin:  auto;
     justify-content: center;
     background-color:white;
     border-radius: 20px;
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    
 
 
 }
@@ -486,6 +515,20 @@ h1{
     font-size: 20px;
     font-weight: 900;
     font-size: 15px;
+}
+
+.inicioRoleta{
+    display: flex;
+    align-items: center;
+}
+
+.inicioRoleta .voltar{
+    position: fixed;
+    left: 75%;
+}
+
+.inicioRoleta .voltar span {
+    color: black;
 }
 .folha {
 
@@ -617,82 +660,335 @@ h1{
 .cardsRoleta > .voltar > .voltarCard{
     margin: 0;
 }
+
+
+
+                                                   /* CARRINHO */
+
+.Carrinho{
+        display:none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.651);
+        justify-content: end;
+        font-family: "Boldonse", system-ui;
+    }
+.SistemaCarrinho{
+    align-items: center;
+    height: 100%;
+    width: 35vw;
+    background-color:white;
+    border-radius: 20px 0px 0px 20px;
+    justify-items: center;
+}
+
+.SistemaCarrinho  .inicioCarrinho{
+    width: 100%;
+    height: 70px;
+    background-color:#9B0404;
+    border-top-left-radius: 20px;
+    display: flex;
+    align-items: center ;
+
  
 
-.conteiner{
-    width: 1500px;
-    padding: 20px;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.651); /* Fundo escuro */
-    align-items: center;
-    justify-content: center;
 }
- .conteinerCarne , .conteinerMetade{
-    width: 1500px;
-    padding: 20px;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.651); /* Fundo escuro */
-    align-items: center;
-    justify-content: center;
-}
-
-.tamanho {
-    width: 600px;
-    height: 350px;
-    margin: auto;
-    background-color:white;
-    border-radius: 20px;
-
-
-}
-.conteinerMetade > .tamanho {
-    margin: auto;
-    width: 600px;
-    height: 550px;
-    justify-content: center;
-    background-color:white;
-    border-radius: 20px;
-    
-
+.inicioCarrinho button{
+    background-color: #9B0404;
 
 }
 
-.metade > input{
-    background-color: #DE9008;
-}
-
-.voltarCard:hover{
+.voltar:hover{
     transform: scale(1.10);
-    transition: .5s;
-    text-shadow: 0px 0px 10px black;
-    color: rgb(155, 4, 4);
+    transition: .4s;
+}
+.voltar span{
+    font-size: 35px;
+    padding: 10px;
+    color: white;
+}
+ 
+ .inicioCarrinho  h1{
+    margin-top: 10px;
+    padding: 0;
+    color: aliceblue;
+}  
+
+
+.cardTest{
+    height: 75vh;
+    width: 100%;
+    display: block;
+    overflow: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+
+}
+.cardPizzas , .cardAcompanhamento{
+    height: 100px;
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 2px solid #9B0404;
+    background-color: white;
 }
 
-.conteinerMetade > .tamanho > h1{
-    font-family: "Boldonse", system-ui;
-    font-weight: 700;
-    padding: 30px;
-    font-size: 30px;
-    color:rgb(155, 4, 4);
+.saborPizza , .saborAcompanhamento{
+    color: #F09C05;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.conteudoPizzas , .conteudoAcompanhamento{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    height: 70%;
+    width: 95%;
+    align-items: center;
+    color: black;
+    font-size: 10px;
+    
+} 
+
+.conteudoPizzas  img {
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.conteudoAcompanhamento img{
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.tamanhoPizza {
+    text-transform: uppercase;
+}
+
+
+
+  .voltar{
+    height: 50px;
+    margin: 0;
+    padding: 0;
     
 }
 
-.metade > h1{
-    color:rgb(155, 4, 4) ;
+.SistemaCarrinho  .voltar  .voltarCard{
+    margin: 0;
+}
+
+.PizzaQuantidade , .acompanhamentoQuantidade{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.PizzaQuantidade p , .acompanhamentoQuantidade p {
+    padding: 0px 5px;
+}
+
+.mais , .menos {
+    font-size: 15px;
+    border: none;
+    width: 15px;
+}
+.CardFiPedido{    
+    height: 14vh;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-items: center;
+}
+.FiPedido{
+    position: fixed;
+     top: 1;
+    left: 1; 
+    width: 30%;
+    display: none;
+    align-items:start;
+    color: #9B0404;
+    margin-bottom: 5px;
+}
+
+.FiPedido a{
+    text-decoration: none;
+    font-weight: 600;
+    background-color: white;
+    width: 180px;
+    height: 35px;
+    padding-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #9B0404;
+    color: #9B0404;
+    border: 2px solid #9B0404;
+
+}
+
+.FiPedido a:hover{
+    transform: scale(1.10);
+    background-color: white;
+    transition: .4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.conteiner , .conteinerC {
+    width: 1500px;
+    padding: 20px;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.651);
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+ .conteinerMetade{
+    width: 1500px;
+    padding: 20px;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.651);
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.tamanho .inicioConteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.inicioConteiner .voltar{
+    position: fixed;
+    left: 72%;
+    display: block;
+    background-color: rgba(240, 255, 255, 0);
+}
+
+.inicioConteiner .voltar span{
+    color: black;
+}
+
+.conteinerC .tamanho , .conteiner .tamanho {
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    background-color:white;
+    border-radius: 20px;
+}
+
+.tamanho .inicioConteinerC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.inicioConteinerC .voltar{
+    position: fixed;
+    left: 72%;
+    display: block;
+    background-color: rgba(240, 255, 255, 0);
+}
+
+.inicioConteinerC .voltar span{
+    color: black;
+}
+
+
+
+
+
+.conteinerMetade > .tamanho{
+    margin: auto;
+    width: 600px;
+    height: 460px;
+    justify-content: center;
+    background-color:white;
+    border-radius: 20px;
+}
+
+.inicial{
+    display: flex;
+    background-color: #9B0404;
+    align-items: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.inicial h1{
     font-family: "Boldonse", system-ui;
     font-weight: 700;
-    padding: 30px;
     font-size: 30px;
+    color: white;
+}
+
+.inicial .voltar{
+    background-color: #ffffff00;
+    margin-left: -60px;
+}
+
+.meio{
+    display: flex;
+    align-items: center;
+    background-color: #9B0404;
+    height: 30px;
+    width: 50%;
+    border-radius: 10px;
+    margin: 18px auto;
+    color: white;
+    font-family: "Boldonse", system-ui;
+}
+
+.input{
+    display: flex;
+    width: 70%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.input p strong{
+    color: #CA8A04;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight:bold ;
 }
 
 select{
@@ -704,13 +1000,21 @@ select{
     margin: 10px;
 }
 
-.carne{
+.Pcarne{
+    border: 1px solid rgb(155, 4, 4);
+    border-radius: 5px;
+    width: 150px;
+    display: none;
+}
+
+.carne {
     border: 1px solid rgb(155, 4, 4);
     border-radius: 5px;
     padding: 5px;
+    display: block;
  }
 
- .carne > strong{
+ .carne ,.Pcarne > strong{
     color: #DE9008;
  }
 
@@ -723,11 +1027,6 @@ select{
     
 }
 
-.voltarCard{
-    margin-top: 40px;
-    height: 50px;
-    cursor: pointer;
-}
 .conteinerMetade > .tamanho > h1{
     color: #DE9008;
 }
@@ -777,6 +1076,7 @@ select{
     padding: 80px 0px;
     text-align: center;
     max-width: 1200px;
+    font-family: "Boldonse", system-ui;
 }
 
 .acompanhamentos > .texto > h2{
@@ -808,7 +1108,7 @@ select{
 }
 
 .acompanhamentos > .conteudo > .refri > div:hover{
-    background-color: lightgrey;
+    background-color: rgba(211, 211, 211, 0.747);
 
 }
 .acompanhamentos > .conteudo > .refri > div > img{
@@ -822,23 +1122,24 @@ select{
     text-shadow:  1px 1px 5px #991B1B;
 }
 
-.acompanhamentos > .conteudo > .refri > div > a{
+.acompanhamentos > .conteudo > .refri > div > button {
     display: block;
     text-decoration: none;
     margin: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.329);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.493);
+    border: none;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 10px;
     padding: 5px 10px;
     text-align: center;
-    font-weight: 900;
+    font-weight: 700;
     background-color:#F09C05;
     color: white;
 }
 
-.acompanhamentos > .conteudo > .refri > div>a:hover{
-    
-    font-weight: 900;
+.acompanhamentos > .conteudo > .refri > div>button:hover{
+    transition: .5s;
+    transform: scale(1.10);
     background-color: white;
     color: #DE9008;
 }

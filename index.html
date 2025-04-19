@@ -19,24 +19,28 @@
          </svg>
       </a>
       <div class="card">
-         <a href="#carpadio" class="navBotoes">CARDÁPIO</a>
-         <a href="#contato" class="navBotoes">CONTATO</a>
+         <button class="navBotoes"><a href="#carpadio" >CARDÁPIO</a></button>
+         <button class="navBotoes"><a href="#contato" >CONTATO</a></button>
          
-         <a class="voltar" onclick="Voltar()">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#ff0000">
-               <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
-            </svg>
-         </a>
+         
          <div class="delivery">
             <img class="DeliveryMotoboy" src="imagensEvideos/DeliveryMotoboy.png" alt="DeliveryMotoboy">
             <p class="textoDelivery">Entrega <strong>Gratis</strong> Em CANARANA</p>
          </div>
+         <button onclick="Voltar()"class="voltar">
+            <span onclick="Voltar()" class="material-symbols-outlined">
+               close
+               </span>
+         </button>
       </div>
       <img class="logo" src="imagensEvideos/pizzarialogo-removebg-preview (3).png" alt="logo">
       <a class="Botaoroleta" onclick="r()">Roleta de sabores</a>
-      <button class="navBotoes2" onclick="verCarrinho()"><span class="material-symbols-outlined">
-            shopping_cart
-         </span></button>
+      <div class="cart">
+         <button class="navBotoes2" onclick="verCarrinho()"><span class="material-symbols-outlined">
+               shopping_cart
+            </span></button>
+            <p class="cartP">0</p>
+      </div>
       <div class="delivery">
          <img class="DeliveryMotoboy" src="imagensEvideos/DeliveryMotoboy.png" alt="DeliveryMotoboy">
          <p class="textoDelivery">Entrega <strong>Gratis</strong> Em CANARANA</p>
@@ -49,10 +53,10 @@
                <p>Mais Pedidas</p>
                <h1>PIZZAS</h1>
                <div class="sabores">
-                  <a class="carneseca">Diplomata</a>
-                  <a class="atum">Atum</a>
-                  <a class="portuguesa">Portuguesa</a>
-                  <a class="napolitana">Napolitana</a>
+                  <a onclick="c(this)">Diplomata</a>
+                  <a onclick="c(this)">Atum</a>
+                  <a onclick="c(this)">Portuguesa</a>
+                  <a onclick="c(this)">Napolitana</a>
                </div>
                <div class="cardsecundario">
                   <a href="#carpadio"><button>Carpadio Completo</button></a>
@@ -68,8 +72,8 @@
          <div class="inicio">
             <h1>CARDÁPIO</h1>
             <div class="pesquisar">
-               <input type="text" name="" id="" placeholder="Procurar Sabor">
-               <a href="#">
+               <input type="text" name="" id="Psabor" placeholder="Procurar Sabor" oninput="Procurar()">
+               <a onclick="Procurar()">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                      <path
                         d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
@@ -84,8 +88,8 @@
                <p class="ingredientes">
                   Atum, mussarela e cebola
                </p>
-               <button class="add-to-cart" onclick="addCard()">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" >Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -93,8 +97,8 @@
                <p class="ingredientes">
                   Mussarela, calabresa ralada, cebola e catupiry
                </p>
-               <button class="add-to-cart" onclick="addCard()">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" >Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -102,8 +106,8 @@
                <p class="ingredientes">
                   Mussarela, atum, palmito e ervilha
                </p>
-               <button class="add-to-cart" onclick="addCard()">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="add-to-cart" >adicionar ao carrinho</button>
+               <button class="card-meio-a-meio">Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -111,8 +115,8 @@
                <p class="ingredientes">
                   Calabresa ralada, mussarela e pimenta
                </p>
-               <button class="add-to-cart" onclick="addCard()">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio">Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -120,8 +124,8 @@
                <p class="ingredientes">
                   Presunto, mussarela e tomate
                </p>
-               <button class="add-to-cart" onclick="addCard()">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio" >Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -129,8 +133,8 @@
                <p class="ingredientes">
                   Bacon e mussarela
                </p>
-               <button class="add-to-cart" onclick="addCard()">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio">Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -138,8 +142,8 @@
                <p class="ingredientes">
                   Frango, mussarela, ervilha, ovo e catupiry
                </p>
-               <button class="add-to-cart" onclick="addCard()">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="add-to-cart" >adicionar ao carrinho</button>
+               <button class="card-meio-a-meio">Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -147,8 +151,8 @@
                <p class="ingredientes">
                   Mussarela, calabresa e cebola
                </p>
-               <button class="add-to-cart" onclick="addCard()">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="add-to-cart" >adicionar ao carrinho</button>
+               <button class="card-meio-a-meio">Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -156,8 +160,8 @@
                <p class="ingredientes">
                   Mussarela e lombo canadense
                </p>
-               <button class="add-to-cart" onclick="addCard()">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio">Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -165,8 +169,8 @@
                <p class="ingredientes">
                   Mussarela, carne de sol, tomate e cebola
                </p>
-               <button class="add-to-cart" onclick="addCardCARNE()">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="add-to-cart">adicionar ao carrinho</button>
+               <button class="card-meio-a-meio">Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -175,7 +179,7 @@
                   Champignon e mussarela
                </p>
                <button class="add-to-cart">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="card-meio-a-meio">Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -184,7 +188,7 @@
                   Frango, catupiry, milho e bacon
                </p>
                <button class="add-to-cart">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="card-meio-a-meio">Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -193,16 +197,16 @@
                   Frango, catupiry e mussarela
                </p>
                <button class="add-to-cart">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="card-meio-a-meio">Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
-               <h2>Frango com Cheddar</h2>
+               <h2>Frango C/Cheddar</h2>
                <p class="ingredientes">
                   Frango, cheddar e mussarela
                </p>
                <button class="add-to-cart">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="card-meio-a-meio">Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -211,7 +215,7 @@
                   Atum, bacon, mussarela e catupiry
                </p>
                <button class="add-to-cart">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="card-meio-a-meio">Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -220,7 +224,7 @@
                   Mussarela e milho
                </p>
                <button class="add-to-cart">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="card-meio-a-meio">Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -229,16 +233,7 @@
                   Mussarela, parmesão e tomate
                </p>
                <button class="add-to-cart">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
-            </div>
-            <div class="sabor">
-               <img src="imagensEvideos/pizza-.png" alt="">
-               <h2>Palmito</h2>
-               <p class="ingredientes">
-                  Mussarela e palmito
-               </p>
-               <button class="add-to-cart">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="card-meio-a-meio">Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -247,7 +242,7 @@
                   Calabresa ralada e mussarela
                </p>
                <button class="add-to-cart">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="card-meio-a-meio">Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -256,7 +251,7 @@
                   Mussarela, tomate seco e manjericão
                </p>
                <button class="add-to-cart">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="card-meio-a-meio">Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -265,7 +260,7 @@
                   Mussarela e palmito
                </p>
                <button class="add-to-cart">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="card-meio-a-meio">Meio a Meio</button>
             </div>
             <div class="sabor">
                <img src="imagensEvideos/pizza-.png" alt="">
@@ -274,19 +269,25 @@
                   Catupiry, cheddar e mussarela
                </p>
                <button class="add-to-cart">adicionar ao carrinho</button>
-               <button class="card-meio-a-meio" onclick="m()">Meio a Meio</button>
+               <button class="card-meio-a-meio">Meio a Meio</button>
             </div>
          </div>
-         <div class="botao" onclick="carregarSabores(this)">
-            <button>Mais Sabores</button>
-         </div>
+            <button class="botao" onclick="carregarSabores(this)">Mais Sabores</button>
+
 
 
                                                        <!-- ROLETA -->
 
          <div class="roleta">
             <div class="SistemaRotela">
-               <h1>Roleta de Sabores</h1>
+               <div class="inicioRoleta">
+                  <h1>Roleta de Sabores</h1>
+                  <button onclick="v()"class="voltar">
+                     <span onclick="v()" class="material-symbols-outlined">
+                        close
+                        </span>
+                  </button>
+               </div>
                <p>Gire a roleta e descubra qual será seu próximo sabor favorito!</p>
                <div class="folha">
                   <img id="imagemRoleta" src="imagensEvideos/pizzaRoleta.png" alt="pizza">
@@ -298,50 +299,81 @@
                  
                </div>
                <div class="cardsRoleta">
-                  <buttom onclick="v()" class="voltar">
-                     <svg class="voltarCard" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
-                        fill="rgb(155, 4, 4)">
-                        <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
-                     </svg>
-                  </buttom>
-                  <button class="RoletaCarrinho" onclick="verCarrinho()">Adicionar ao Carrinho</button>
+                  <button class="RoletaCarrinho" onclick="">Adicionar ao Carrinho</button>
                </div>
             </div>
          </div>
 
-      
+
+
+
+                                    <!-- CARRINHO -->
          
-         <div class="CarrinhodeCompras">
-            <button class="navBotoes2" onclick="verCarrinho()"><span class="material-symbols-outlined">
-               shopping_cart
-            </span></button>
+
+         <div class="Carrinho">
+               <div class="SistemaCarrinho">
+                  <div class="inicioCarrinho">
+                     <h1>Carrinho</h1>
+                     <button onclick="v()"class="voltar">
+                        <span onclick="v()" class="material-symbols-outlined">
+                           close
+                           </span>
+                     </button>
+                  </div>
+                  <div class="cardTest">
+                  <h3 class="carrinhoVazio">Seu carrinho esta vazio.</h3>
+                  
+                  </div>
+                  <div class="CardFiPedido">
+                     <div class="FiPedido">
+                        <a>Finalizar Pedido</a>
+                        <p class="VTotal">00,00</p>
+                     </div>
+                     </div>
+                  </div>
+                  
+                  
+               
+            </div>
          </div>
 
 
+                                          <!-- Cards -->
 
          <div class="conteiner">
             <div class="tamanho">
-               <h1>Qual Tamanho ?</h1>
+               <div class="inicioConteiner">
+                  <h1>Qual Tamanho ?</h1>
+                  <button onclick="v()"class="voltar">
+                     <span onclick="v()" class="material-symbols-outlined">
+                        close
+                        </span>
+                  </button>
+               </div>
                <div class="card">
                   <div class="p">
-                     <button>P</button>
+                     <button class="TamanhoP" onclick="t(1)">P</button>
                      <h3>4 Fatias</h3>
                      <h3>29,99</h3>
+                     <h3 class="Pcarne">Sabor:<strong>CARNE SECA</strong> : 34,99</h3>
                   </div>
-                  <div class="m">
-                     <button>M</button>
+                  <div class="TamanhoM">
+                     <button onclick="t(2)">M</button>
                      <h3>6 Fatias</h3>
                      <h3>39,99</h3>
+                     <h3 class="Pcarne">Sabor:<strong>CARNE SECA</strong> : 44,99</h3>
                   </div>
-                  <div class="g">
-                     <button>G</button>
+                  <div class="TamanhoG">
+                     <button onclick="t(3)">G</button>
                      <h3>8 Fatias</h3>
                      <h3>44,99</h3>
+                     <h3 class="Pcarne">Sabor:<strong>CARNE SECA</strong> : 54,99</h3>
                   </div>
-                  <div class="gg">
-                     <button>GG</button>
+                  <div class="TamanhoGG">
+                     <button onclick="t(4)">GG</button>
                      <h3>10 Fatias</h3>
                      <h3>54,99</h3>
+                     <h3 class="Pcarne">Sabor:<strong>CARNE SECA</strong> : 64,99</h3>
                   </div>
                </div>
                <button onclick="v()" class="voltar">
@@ -352,123 +384,117 @@
                </button>
             </div>
          </div>
-         <div class="conteinerCarne">
+         <div class="conteinerC">
             <div class="tamanho">
-               <h1>Qual Tamanho ?</h1>
+                  <div class="inicioConteinerC">
+                  <h1>Qual Tamanho ?</h1>
+                  <button onclick="v()"class="voltar">
+                     <span onclick="v()" class="material-symbols-outlined">
+                        close
+                        </span>
+                  </button>
+            </div>
                <div class="card">
-                  <div class="p">
-                     <button>P</button>
+                  <div class="TamanhoP">
+                     <button  onclick="q(1)">P</button>
                      <h3>4 Fatias</h3>
-                     <h3>34,99</h3>
+                     <h3>29,99</h3>
+                     <h3 class="Pcarne">Sabor<strong>CARNE SECA</strong> : 34,99</h3>
                   </div>
-                  <div class="m">
-                     <button>M</button>
+                  <div class="TamanhoM">
+                     <button onclick="q(2)">M</button>
                      <h3>6 Fatias</h3>
-                     <h3>44,99</h3>
+                     <h3>39,99</h3>
+                     <h3 class="Pcarne">Sabor<strong>CARNE SECA</strong> : 44,99</h3>
                   </div>
-                  <div class="g">
-                     <button>G</button>
+                  <div class="TamanhoG">
+                     <button onclick="q(3)">G</button>
                      <h3>8 Fatias</h3>
-                     <h3>54,99</h3>
+                     <h3>44,99</h3>
+                     <h3 class="Pcarne">Sabor <strong>CARNE SECA</strong> : 54,99</h3>
                   </div>
-                  <div class="gg">
-                     <button>GG</button>
+                  <div class="TamanhoGG">
+                     <button onclick="q(4)">GG</button>
                      <h3>10 Fatias</h3>
-                     <h3>64,99</h3>
+                     <h3>54,99</h3>
+                     <h3 class="Pcarne">Sabor<strong>CARNE SECA</strong> : 64,99</h3>
                   </div>
                </div>
-               <p onclick="v()" class="voltar">
+               <button onclick="v()" class="voltar">
                   <svg class="voltarCard" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                      fill="rgb(155, 4, 4)">
                      <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
                   </svg>
-               </p>
+               </button>
             </div>
          </div>
          <div class="conteinerMetade">
             <div class="tamanho">
                <div class="metade">
-                  <h1>Quais sabores sua pizza terá ? </h1>
-                  <select name="sabores1">
-                     <optgroup label="Sabor 1">
-                        <option value="Atum">Atum</option>
-                        <option value="Alemã">Alemã</option>
-                        <option value="Americana">Americana</option>
-                        <option value="Baiana">Baiana</option>
-                        <option value="Bauru">Bauru</option>
-                        <option value="Bacon">Bacon</option>
-                        <option value="Brasileirinha">Brasileirinha</option>
-                        <option value="Calabresa">Calabresa</option>
-                        <option value="Canadense">Canadense</option>
-                        <option value="Carne Seca">Carne Seca</option>
-                        <option value="Champignon">Champignon</option>
-                        <option value="Diplomata">Diplomata</option>
-                        <option value="Frango Catupiry">Frango Catupiry</option>
-                        <option value="Frango com Cheddar">Frango com Cheddar</option>
-                        <option value="Mexicana">Mexicana</option>
-                        <option value="Milho">Milho</option>
-                        <option value="Napolitana">Napolitana</option>
-                        <option value="Palmito">Palmito</option>
-                        <option value="Toscana">Toscana</option>
-                        <option value="Tomate Seco">Tomate Seco</option>
-                        <option value="Três Queijos">Três Queijos</option>
-                     </optgroup>
-                  </select>
-                  <select name="sabores2">
-                     <optgroup label="Sabor 2">
-                        <option value="Atum">Atum</option>
-                        <option value="Alemã">Alemã</option>
-                        <option value="Americana">Americana</option>
-                        <option value="Baiana">Baiana</option>
-                        <option value="Bauru">Bauru</option>
-                        <option value="Bacon">Bacon</option>
-                        <option value="Brasileirinha">Brasileirinha</option>
-                        <option value="Calabresa">Calabresa</option>
-                        <option value="Canadense">Canadense</option>
-                        <option value="Carne Seca">Carne Seca</option>
-                        <option value="Champignon">Champignon</option>
-                        <option value="Diplomata">Diplomata</option>
-                        <option value="Frango Catupiry">Frango Catupiry</option>
-                        <option value="Frango com Cheddar">Frango com Cheddar</option>
-                        <option value="Mexicana">Mexicana</option>
-                        <option value="Milho">Milho</option>
-                        <option value="Napolitana">Napolitana</option>
-                        <option value="Palmito">Palmito</option>
-                        <option value="Toscana">Toscana</option>
-                        <option value="Tomate Seco">Tomate Seco</option>
-                        <option value="Três Queijos">Três Queijos</option>
-                     </optgroup>
-                  </select>
+                  <div class="inicial">
+                     <h1>Meio a Meio</h1>
+                     <button onclick="v()" class="voltar">
+                        <span class="material-symbols-outlined">
+                           close
+                           </span>
+                     </button>
+                  </div>
+                  <div class="meio">
+                     <p>Metade:</p>
+                     <p class="texte"></p>
+                  </div>
+                  <div class="input">
+                     <p>Qual sua outra <strong>metade</strong>?</p>
+                     <select name="sabores2" id="sabores2" onchange="f()">
+                        <optgroup label="Sabor 2">
+                           <option value="Atum">Atum</option>
+                           <option value="Alemã">Alemã</option>
+                           <option value="Americana">Americana</option>
+                           <option value="Baiana">Baiana</option>
+                           <option value="Bauru">Bauru</option>
+                           <option value="Bacon">Bacon</option>
+                           <option value="Brasileirinha">Brasileirinha</option>
+                           <option value="Calabresa">Calabresa</option>
+                           <option value="Canadense">Canadense</option>
+                           <option value="Carne Seca">Carne Seca</option>
+                           <option value="Champignon">Champignon</option>
+                           <option value="Diplomata">Diplomata</option>
+                           <option value="Frango Catupiry">Frango Catupiry</option>
+                           <option value="Frango C/Cheddar">Frango C/Cheddar</option>
+                           <option value="Mexicana">Mexicana</option>
+                           <option value="Milho">Milho</option>
+                           <option value="Napolitana">Napolitana</option>
+                           <option value="Palmito">Palmito</option>
+                           <option value="Toscana">Toscana</option>
+                           <option value="Tomate Seco">Tomate Seco</option>
+                           <option value="Três Queijos">Três Queijos</option>
+                        </optgroup>
+                     </select>
+                  </div>
 
                </div>
                <h1>Qual o tamanho ? </h1>
                <div class="card">
                   <div class="m">
-                     <button>M</button>
+                     <button onclick="b(1)">M</button>
                      <h3>6 Fatias</h3>
                      <h3>39,99</h3>
                      <h3 class="carne">Sabor Com <strong>CARNE SECA</strong> : 44,99</h3>
                   </div>
                   <div class="g">
-                     <button>G</button>
+                     <button onclick="b(2)">G</button>
                      <h3>8 Fatias</h3>
                      <h3>44,99</h3>
                      <h3 class="carne">Sabor Com <strong>CARNE SECA</strong> : 54,99</h3>
                   </div>
                   <div class="gg">
-                     <button>GG</button>
+                     <button onclick="b(3)">GG</button>
                      <h3>10 Fatias</h3>
                      <h3>54,99</h3>
                      <h3 class="carne">Sabor Com <strong>CARNE SECA</strong> : 64,99</h3>
 
                   </div>
                </div>
-               <button onclick="v()" class="voltar">
-                  <svg class="voltarCard" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
-                     fill="rgb(155, 4, 4)">
-                     <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
-                  </svg>
-               </button>
             </div>
          </div>
       </section>
@@ -485,13 +511,13 @@
                <div class="refri">
                   <div>
                      <img src="imagensEvideos/pepsi.png" alt="pepsi">
-                     <h1>Pepsi 1L</h1>
-                     <a href="#">ADICIONAR ACOMPANHAMENTO</a>
+                     <h1 class="Pepsi">Pepsi 1L</h1>
+                     <button onclick="a(1)">ADICIONAR ACOMPANHAMENTO</button>
                   </div>
                   <div>
                      <img src="imagensEvideos/guarana.png" alt="guarana">
-                     <h1>Guaraná 1L</h1>
-                     <a href="#">ADICIONAR ACOMPANHAMENTO</a>
+                     <h1 class="Guaraná">Guaraná 1L</h1>
+                     <button onclick="a(2)">ADICIONAR ACOMPANHAMENTO</button>
                   </div>
                </div>
             </div>
